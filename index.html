@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Management System</title>
+</head>
+<body>
+    <h2>Place Order</h2>
+    <!--A dropdown to select a product-->
+    <label for="product-selector">Select a Product:</label>
+    <select id="product-selector">
+    <option value="100">Monitor - $100</option>
+    <option value="200">Smartphone - $200</option>
+    <option value="300">Tablet - $300</option>
+    </select>
+
+    <!--Input field to enter quantity-->
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+
+    <!--Paragraph to display total price-->
+    <p>Total Price: $<span id="total-price">10</span></p>
+
+    <!--Button to place order and display order summary-->
+    <button id="place-order">Place Order</button>
+
+    <p id="order-summary"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
