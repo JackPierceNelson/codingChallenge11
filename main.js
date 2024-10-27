@@ -32,7 +32,9 @@ placeOrderButton.addEventListener('click', function() {
     const selectedProduct = productSelector.options[productSelector.selectedIndex].text;
     const quantity = quantityInput.value;
     const totalPrice = totalPriceElement.textContent;
-    
+
+
+    // Display order summary with a text
     orderSummary.textContent = `You ordered ${quantity} of ${selectedProduct}. Total price: $${totalPrice}`;
 });
 
